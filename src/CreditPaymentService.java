@@ -1,15 +1,15 @@
 public class CreditPaymentService {
-    public int calculate (int a, int b) {
+    public int calculate (int money, int months) {
 
-        double c = 1.008325;
-        double d = Math.pow (c,b);
+        double index = 1.008325;
+        double calcOne = Math.pow (index,months);
 
-        double x = d - 1;
-        double e = 0.008325 / x;
+        double calcTwo = calcOne - 1;
+        double calcThree = 0.008325 / calcTwo;
 
-        double f = 0.008325 + e;
+        double calcFour = 0.008325 + calcThree;
 
-        double result = f * a;
+        double result = calcFour * money;
 
         return (int) result;
     }
