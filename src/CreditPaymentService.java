@@ -1,7 +1,7 @@
 public class CreditPaymentService {
     public int calculate (int money, int months) {
 
-        double index = 1.008325;
+        double index = 0.008325 + 1;
         double calcOne = Math.pow (index,months);
 
         double calcTwo = calcOne - 1;
